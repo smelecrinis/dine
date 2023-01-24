@@ -110,7 +110,9 @@ select {
   background-color: white;
 }
 
-input[type="text"] {  
+input[type="text"],
+input[type="email"],
+select {  
   -webkit-appearance: none;
   -webkit-border-radius: 0;
 }
