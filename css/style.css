@@ -63,14 +63,20 @@ header {
   text-decoration: none;
   padding: 1.2rem 3.5rem;
   text-transform: uppercase;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: all 0.1s ease;
 }
 
-.reserve-btn:hover {
-  background-color: rgb(124, 103, 88);  
+.reserve-btn:hover,
+.reserve-btn:active {
+  background-color: rgb(124, 103, 88); 
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px); 
 }
 
 .btn {
   background-color: black;
+  border: 0;
 }
 
 section {
@@ -171,8 +177,8 @@ hr {
 }
 
 .gat-description {
-  margin-bottom: 3.75rem;
-  min-height: 8rem;
+  margin-bottom: 3rem;
+  min-height: 10rem;
 }
 
 ul {
