@@ -111,11 +111,15 @@ select {
 }
 
 input[type="text"],
-input[type="email"],
-select {  
+input[type="email"] {  
   -webkit-appearance: none;
   -webkit-border-radius: 0;
 }
+
+select {
+  -webkit-border-radius: 0;
+}
+
 
 .input-date, 
 .input-time, 
