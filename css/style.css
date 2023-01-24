@@ -32,6 +32,11 @@ header {
   font-weight: 700;    
 } 
 
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+
 .big-text {
   color: white;
   font-size: 2rem;
