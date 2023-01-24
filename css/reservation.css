@@ -106,6 +106,7 @@ select {
 
 select {
   background-color: white;
+  -webkit-border-radius: 0;
 }
 
 input[type="text"],
@@ -113,11 +114,6 @@ input[type="email"] {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
 }
-
-select {
-  -webkit-border-radius: 0;
-}
-
 
 .input-date, 
 .input-time, 
