@@ -95,7 +95,7 @@ section {
 .left-image,
 .right-image,
 .gathering-image {   
-  box-shadow: 5px 40px 45px rgba(0, 0, 0, .2);
+  box-shadow: 5px 25px 35px rgba(0, 0, 0, .2);
   height: 25rem;
   object-fit: cover;
   width: 100%;   
@@ -132,7 +132,7 @@ section {
 
 h2 {
   font-size: 2rem;  
-  margin: 1.75rem auto;
+  margin: 2.75rem auto;
   line-height: 3rem;
 }
 
