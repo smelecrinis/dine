@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dine</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">    
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <div class="logo-container">        
+                    <div class="logo">dine</div>
+                </div>
+                <div class="header-content-wrapper">
+                    <div class="header-content">            
+                        <h1 class="big-text">Exquisite dining since 1989</h1>
+                        <p class="small-text">Experience our seasonal menu in beautiful country surrounding. Eat the freshest produce from the comfort of our farmhouse.</p>
+                        <a class="reserve-btn" href="reservation.html" target="_blank">Book a table</a>
+                    </div> 
+                </div> 
+            </header>
+            <section class="bg-shape left">                                 
+                <div class="container-image-left">
+                    <img class="left-image" src="./img/farmhouse.jpg" alt="couple walking in the farm">
+                    <div class="right-text">
+                        <div class="content">
+                            <div class="circle"></div>
+                            <div class="top-line"></div>                                            
+                            <h2>Enjoyable place for all the family</h2>
+                            <p>Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal.</p>
+                        </div>
+                    </div>
+                </div>                           
+            </section>        
+            <section class="bg-shape right horizontal-lines bottom-right-lines">
+                <div class="container-image-right">
+                    <img class="right-image" src="./img/chef-cooking.jpg" alt="chef preparing a meal">
+                    <div class="left-text">
+                        <div class="content">
+                            <div class="circle"></div>
+                            <div class="top-line"></div>                                            
+                            <h2>The most locally sourced food</h2>
+                            <p>All our ingredients come directly form our farm or local fishery. So you can be sure that you are eating the freshest, most sustainable food.</p>
+                        </div>                    
+                    </div>
+                </div>     
+            </section>              
+            <section class="highlights">
+                <div class="container-right">
+                    <div class="left-text">
+                        <div class="content">
+                            <div class="circle"></div>
+                            <div class="top-line"></div>
+                            <h2>A few highligths from our menu</h2>
+                            <p>We cater for all dietary requirements, but here's a glimpse at some some of our diner's favourites.
+                                Our menu is revamped every season.</p>
+                        </div>
+                    </div>
+                    <div class="highlights-container-menu">
+                        <div class="favourites">
+                            <img class="fav-image" src="./img/salmon.jpg" alt="salmon filet">
+                            <div class="line"></div>
+                            <div class="fav-content">
+                                <p class="fav-title">Seared Salmon Fillet</p>
+                                <p class="fav-description">Our locally sourced salmon served with a refreshing buckwheat summer salad.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="favourites">
+                            <img class="fav-image" src="./img/filet.jpg" alt="filet mignon">
+                            <div class="line"></div>
+                            <div class="fav-content">
+                                <p class="fav-title">Rosemary Filet Mignon</p>
+                                <p class="fav-description">Our prime beef served to your taste with a delicious choice of seasonal sides.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="favourites">
+                            <img class="fav-image" src="./img/mousse.jpg" alt="chocolate mousse">
+                            <div class="line"></div>
+                            <div class="fav-content">
+                                <p class="fav-title">Summer Fruit Chocolate Mousse</p>
+                                <p class="fav-description">Creamy mousse combined with summer fruits and dark chocolate shavings.</p>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+            </section>    
+            <section class="gatherings bg-shape top-left horizontal-lines top-left-lines">
+                <div class="container-image-left">
+                    <img class="left-image" src="./img/gathering.jpg" alt="family gathered at the table">
+                    <div class="gatherings-container"> 
+                        <div class="gatherings-content">            
+                            <div class="right-text">
+                                <div class="content tabcontent" id="familyGathering">                                          
+                                    <h2>Family Gathering</h2>
+                                    <p class="gat-description">We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We'll provide a memorable experience for all.</p>
+                                    <a class="reserve-btn btn" href="reservation.html" target="_blank">Book a table</a>              
+                                </div> 
+                                <div class="content tabcontent" id="specialEvents">                                            
+                                    <h2>Special events</h2>
+                                    <p class="gat-description">Join us for a night to remember at our upcoming special event! We have an exciting program lined up including live performances, delicious food and great networking opportunities.</p>
+                                    <a class="reserve-btn btn" href="reservation.html" target="_blank">Book a table</a>         
+                                </div>      
+                                <div class="content tabcontent" id="socialEvents">                                        
+                                    <h2>Social Events</h2>
+                                    <p class="gat-description">Get ready to socialize, dance, and have a great time at our upcoming event! This is the perfect opportunity to let loose, meet new people and make lasting memories.</p>
+                                    <a class="reserve-btn btn" href="reservation.html" target="_blank">Book a table</a>              
+                                </div>
+                            </div>
+                            <ul id="links">
+                                <li><a class="tablinks active" href="#family-gathering" onclick="openPage('familyGathering')" id="defaultOpen">Family Gathering</a></li>              
+                                <li><a class="tablinks" href="#special-events" onclick="openPage('specialEvents')">Special Events</a></li>              
+                                <li><a class="tablinks" href="#social-events" onclick="openPage('socialEvents')">Social Events</a></li>
+                            </ul>
+                        </div>                          
+                    </div>                         
+                </div>     
+            </section>       
+            <section class="reservation">
+                <div class="reserve-container"> 
+                    <div class="reserve-content">                        
+                        <h2> Ready to make a reservation?</h2>     
+                        <a class="reserve-btn" href="reservation.html" target="_blank">Book a table</a>                
+                    </div>    
+                </div>    
+            </section>                 
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="logo">dine</div>
+                <div class="footer-content">
+                    <div class="address">
+                        <p>Marthwaite, Sedbergh</p>
+                        <p>Cumbria</p>
+                        <a href="tel:+00441234567">+00 44 123 4567</a>
+                    </div>
+                    <div class="opening-hours">
+                        <p>Open Times</p>
+                        <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
+                        <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script type="text/javascript" src="./js/script.js"></script>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./css/reservation.css">
+    <script src="https://kit.fontawesome.com/5830eb4058.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="logo-container">        
+                <div class="logo">dine</div>
+            </div>
+            <div class="header-content-wrapper">
+                <div class="header-content">            
+                    <h1 class="big-text">Reservations</h1>
+                    <p class="small-text">We can't wait to host you. If you have any special requirements please feel free to call on the phone number below. We'll be happy to accomodate you.</p>
+                </div> 
+            </div> 
+        </header>
+        <section class="bg-shape bottom-left horizontal-lines bottom">
+            <div class="form-container">
+                <form id="form">        
+                    <div class="input-name">                    
+                        <input type="text" name="name" id="name" placeholder="Name*">   
+                        <i class="fas fa-exclamation-circle failure-icon"></i>
+                        <i class="far fa-check-circle success-icon"></i>
+                        <div class="error"></div>     
+                    </div>
+                    <div class="input-email">                    
+                        <input type="email" name="email" id="email" placeholder="Email address*">
+                        <i class="fas fa-exclamation-circle failure-icon"></i>
+                        <i class="far fa-check-circle success-icon"></i>
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-date">
+                        <label >Pick a date</label>
+                        <input type="text" name="day" placeholder="DD"  minlength="2" maxlength="2" >
+                        <input type="text" name="month" placeholder="MM"  minlength="2" maxlength="2">
+                        <input type="text" name="year" placeholder="YYYY"  minlength="4" maxlength="4">
+                    </div>
+                    <div class="input-time">
+                        <label>Pick a time</label>
+                        <input type="number" placeholder="00">
+                        <input type="text" placeholder="00">
+                        <select id="am-pm" name="am-pm">
+                            <option value="AM" selected>AM</option>
+                            <option value="PM">PM</option>
+                        </select>                            
+                    </div>
+                    <div class="input-guests">
+                        <div class="counter-label">People</div>
+                        <div class="counter">
+                            <div class="minBtn" id="count-down"><i class="fa-sharp fa-solid fa-minus"></i></div>
+                            <div class="guest-number" id="counter">0</div>                    
+                            <div class="plusBtn" id="count-up"><i class="fa-sharp fa-solid fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <button id="submit" type="submit">MAKE A RESERVATION</button>
+                </form>                
+            </div>
+        </section>         
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="logo">dine</div>
+            <div class="footer-content">
+                <div class="address">
+                    <p>Marthwaite, Sedbergh</p>
+                    <p>Cumbria</p>
+                    <a href="tel:+00441234567">+00 44 123 4567</a>
+                </div>
+                <div class="opening-hours">
+                    <p>Open Times</p>
+                    <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
+                    <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="./js/reservation.js"></script>
+</html>

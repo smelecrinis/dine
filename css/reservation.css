@@ -1,0 +1,395 @@
+*, 
+*::before, 
+*::after { 
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+  font-size: 1rem;  
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;  
+  display: flex;
+  flex-direction: column; 
+  text-align: center   
+}
+
+header {
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), 
+  url(../img/hero-reservation-mobile.jpg) no-repeat center / cover; 
+  width: 100%;
+  min-height: 50rem;           
+}
+
+.logo {
+  color: white;
+  font-size: 2.25rem;  
+  padding: 17rem 2rem 0rem;
+  letter-spacing: 2px;
+  font-weight: 700;    
+} 
+
+.big-text {
+  color: white;
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 2.35rem;
+  line-height: 3rem;
+  padding: 0 3rem;  
+}
+
+.small-text {
+  color: white;   
+  padding-top: 1rem;
+  font-weight: 200;  
+  margin: auto auto 4rem;
+  text-shadow: 2px 2px 4px black;
+  max-width: 23rem;  
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.form-container {
+  width: 80%;
+  background-color: white;  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  padding: 5rem 0; 
+  max-width: 28rem;
+  min-height: 40.5rem; 
+  margin: auto; 
+}
+
+form div {
+  margin-bottom: 1rem;
+  position: relative;  
+}
+
+form div i {
+  position: absolute;
+  padding: 0.625rem;
+}
+
+label {
+  white-space: nowrap;
+  margin: auto 0.7rem auto 0; 
+  display: block;  
+}
+
+input,
+select {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: 0; 
+  border-bottom: 1px solid gray;
+  padding: 0 0.5rem; 
+  margin-right: 0.7rem;
+}
+
+.input-date, 
+.input-time, 
+.input-guests {
+  display: flex;
+  margin-top: 1rem;
+}
+
+input:focus, select:focus {
+  outline: none;
+}
+
+.failure-icon,
+.error {
+  color: red;
+}
+
+.success-icon {
+  color: green;
+}
+
+.error {
+  text-align: left;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.success-icon,
+.failure-icon {
+  right: 0;
+  top: 0;  
+  opacity: 0;
+}
+
+.counter button {
+  background-color: transparent;
+  border: 0;  
+}
+
+.counter {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  padding-bottom: 0.5rem;  
+}
+
+.counter-label {
+  margin-right: 0.7rem;
+}
+
+.counter div {
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+button[type="submit"] {
+  appearance: none;
+  border: 0;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  letter-spacing: 2px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: all 0.1s ease;
+}
+
+button[type="submit"]:hover{
+  background-color: #7C6758;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+footer {  
+  background: black;
+  color: white;
+  padding: 3.75rem 0;     
+}
+
+footer .logo {
+  padding: 0 0 2rem;
+}
+
+.address,
+.opening-hours {
+  margin-bottom: 2rem;  
+}
+
+.address p,
+.opening-hours p{  
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+ 
+}
+
+.address a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;   
+}
+
+.hidden {   
+  display: none;
+}
+
+.thanks {
+  color: green;
+  padding-top: 2rem; 
+}
+
+/*----MEDIA QUERIES----*/
+
+@media screen and (min-width: 37.5rem) {
+  .logo {
+    padding-bottom: 1rem;
+  }
+
+  .big-text {
+    max-width: 23rem;
+    margin: auto
+  } 
+  
+  .small-text {
+    max-width: 34rem;
+  }
+
+  .form-container {    
+    box-shadow: 5px 40px 45px rgba(0, 0, 0, .2);
+    padding: 2rem 4rem;
+    margin: -11.75rem 3.75rem 5.75rem;  
+    width: auto;  
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: left;      
+  }  
+}
+
+@media screen and (min-width: 75rem){
+  body {
+    text-align: initial;    
+  }
+
+  header {
+    background: url(../img/hero-reservation.jpg) no-repeat center / cover;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    width: 80%;
+    padding: 3.375rem 0;
+  }
+
+  .header-content-wrapper {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-content {
+    width: 80%;
+    margin: 0;
+    max-width: initial;
+  }
+
+  .big-text {
+    font-size: 3.5rem;
+    line-height: 5rem;
+    margin: 0;
+    padding: 2rem 0 0;   
+    max-width: 34.5rem;
+  }
+
+  .small-text {
+    max-width: 26rem;
+    margin: 0 0 4rem;    
+  }
+
+  .form-container{    
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, .2);
+    margin: -36rem -32rem 12rem 0; 
+    padding: 2rem 5rem;         
+  }
+
+  .bg-shape {
+    position: relative;  
+  }
+  
+  .bg-shape:before {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 300px;
+    background: #f5f5f5;  
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    border-radius: 0 0 7rem 0; 
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .logo {
+    padding: 0;
+  }
+
+  .footer-container {
+    width: 80%;      
+  }
+
+  .footer-content {
+    display: flex;
+  }
+
+  .address,
+  .opening-hours {
+   margin: 0;
+   width: 100%;
+  } 
+
+  .horizontal-lines {
+    position: relative;
+  }
+
+  .horizontal-lines:after {
+    content: '';
+    background-color: transparent;
+    background-image: linear-gradient(transparent 50%, rgba(124, 103, 88, 1) 50%);
+    background-size: 10px 10px;
+    width: 120px;
+    height: 60px; 
+    position: absolute;
+    z-index: -1;
+  }
+
+  .bottom:after {
+    top: 31%;
+    left: 41%
+  }
+}
+  @media screen and (min-width: 100rem){
+    body {
+      font-size: 1.3rem;
+    }
+    
+    .big-text {
+      font-size: 5rem;
+      max-width: 40rem;
+    }
+  
+    .small-text {
+      max-width: 35rem;
+    }
+
+    .form-container{            
+      margin: -36rem -38rem 9rem 0;             
+    }
+
+    label,
+    .counter-label,
+    .counter {
+      font-size: 1rem;
+    }
+
+    .bottom:after {
+      top: 37%;
+      left: 47%
+    }
+}

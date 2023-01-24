@@ -1,0 +1,653 @@
+*, 
+*::before, 
+*::after { 
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+  font-size: 1rem;  
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;  
+  display: flex;
+  flex-direction: column; 
+  text-align: center   
+}
+
+header {
+  background: center / cover no-repeat url(../img/hero-image-main-mobile2.jpg);
+  min-height: 50rem;     
+}
+
+.logo {
+  color: white;
+  font-size: 2.25rem;  
+  padding: 17rem 2rem 0rem;
+  letter-spacing: 2px;
+  font-weight: 700;    
+} 
+
+.big-text {
+  color: white;
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 2.35rem;
+  line-height: 3rem;
+  padding: 0 3rem;  
+}
+
+.small-text {
+  color: white;   
+  padding-top: 1rem;
+  font-weight: 200;  
+  margin: auto auto 4rem;
+  text-shadow: 2px 2px 4px black;
+  max-width: 23rem;
+  
+}
+
+.reserve-btn {
+  color: white;
+  border: white solid 1px;
+  text-decoration: none;
+  padding: 1.2rem 3.5rem;
+  text-transform: uppercase;
+}
+
+.reserve-btn:hover {
+  background-color: rgb(124, 103, 88);  
+}
+
+.btn {
+  background-color: black;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.container-image-left, 
+.container-image-right,
+.container-right {
+  width: 80%;      
+}
+
+.left-image,
+.right-image,
+.gathering-image {   
+  box-shadow: 5px 40px 45px rgba(0, 0, 0, .2);
+  height: 25rem;
+  object-fit: cover;
+  width: 100%;   
+}
+
+.left-image {
+  margin: -3.75rem 0 3.75rem 0;    
+}
+
+.right-image {
+  margin-bottom: 3.75rem;
+}
+
+.right-text,
+.left-text {  
+  margin-bottom: 3.75rem;    
+}
+
+.circle {
+  border: 1px solid rgb(124, 103, 88);
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  margin-bottom: -3px;  
+}
+
+.top-line {
+  border: 1px solid rgb(124, 103, 88);
+  display: inline-block;
+  width: 4.5rem;
+  margin-left: 0.625rem;  
+}
+
+h2 {
+  font-size: 2rem;  
+  margin: 1.75rem auto;
+  line-height: 3rem;
+}
+
+
+.highlights {
+  background-color: black;
+  color: white;
+  padding: 3.75rem 0;  
+}
+
+.favourites {  
+  margin: 1.875rem 0;
+}
+
+.favourites img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover; 
+  padding-bottom: 1rem;   
+}
+
+.fav-title {
+  font-weight: 700;
+  margin-bottom: 0.938rem;
+  font-size: 1.1rem;
+}
+
+hr {
+  opacity: 0.2;
+}
+
+.gatherings {
+  margin-bottom: 3.75rem;
+}
+
+.gatherings .left-image {  
+  margin: 4.75rem 0 0;  
+}
+
+.gathering-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.gat-description {
+  margin-bottom: 3.75rem;
+  min-height: 8rem;
+}
+
+ul {
+  margin: 3.75rem 0 1rem;
+  list-style: none;
+}
+
+li {
+  margin: 0.625rem 0;  
+  text-transform: uppercase;
+  display: block; 
+}
+
+li a {
+  color: #a3a3a3;
+  text-decoration: none;
+}
+
+li a:hover, li a:focus, li a:active {
+  color: #7C6758;
+  text-decoration: none;
+  border-bottom: 2px solid #7C6758;  
+  cursor: pointer;
+}
+
+li a.active {
+  border-bottom: 2px solid #7C6758;
+  color: #7C6758;
+}
+
+.tabcontent {
+  display: none
+}
+
+.reservation {
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), 
+  url(../img/reservation.jpg) no-repeat center / cover; 
+  width: 100%;
+  height: 20rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.reserve-container {
+  margin-bottom: 3.75rem;
+}
+
+.reservation h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+footer {  
+  background: black;
+  color: white;
+  padding: 3.75rem 0;     
+}
+
+footer .logo {
+  padding: 0 0 2rem;
+}
+
+.address,
+.opening-hours {
+  margin-bottom: 2rem;  
+}
+
+.address p,
+.opening-hours p{  
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+ 
+}
+
+.address a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;   
+}
+/*----MEDIA QUERIES----*/
+
+@media screen and (min-width: 37.5rem) {
+   .logo {
+    padding-bottom: 1rem;
+  }
+
+  .big-text {
+    max-width: 23rem;
+    margin: auto
+  } 
+  
+  .small-text {
+    max-width: 34rem;
+  }
+        
+  .right-image {
+    object-position: bottom; 
+  }
+
+  .content {
+    max-width: 27rem;
+    margin: auto;
+  } 
+  
+  h2 {
+    max-width: 22rem;    
+  }
+
+  .reservation h2 {
+   max-width: initial; 
+  }
+  
+  .favourites {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+
+  .favourites img {
+    height: 7rem; 
+    width: 9rem;
+    padding: 0;   
+  }
+
+  .fav-content {
+    text-align: left;
+    margin-left: 4rem;    
+  }
+
+  .gatherings .left-image {
+    object-position: top;    
+  }
+
+  .gatherings-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reservation {
+    height: 15rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: left;      
+  }
+
+  .bg-shape {
+    position: relative;  
+  }
+  
+  .bg-shape:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    background: #f5f5f5;  
+    top: 0;
+    right: 0;
+    z-index: -1;  
+  }
+
+  .left:before {
+    border-radius: 0 6.5rem 0 0;
+    top: 30%; 
+    left: 0%; 
+  }
+  
+  .right:before {
+    border-radius: 6.5rem 0 0 0;
+    top: 70%; 
+    right: 0%;
+  }
+  
+  .top-left:before{
+    border-radius: 0 6.5rem 0 0;
+    top: 0%; 
+    left: 0%;
+    width: 40%;
+  }
+
+  .horizontal-lines {
+    position: relative;
+  }
+
+  .horizontal-lines:after {
+    content: '';
+    background-color: transparent;
+    background-image: linear-gradient(transparent 50%, rgba(124, 103, 88, 1) 50%);
+    background-size: 10px 10px;
+    width: 120px;
+    height: 60px; 
+    position: absolute;
+    z-index: 1;
+  }
+
+  .bottom-right-lines:after {
+    bottom: 60%;
+    right: 5%;
+  }
+
+  .top-left-lines:after {
+    top: 5%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 75rem) {
+  
+  body {
+    text-align: initial;    
+  }
+
+  header {
+    background-image: url(../img/hero-image-main.jpg);
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    width: 80%;
+    padding: 3.375rem 0;
+  }
+
+  .header-content-wrapper {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-content {
+    width: 80%;
+    margin: 0;
+    max-width: initial;
+  }
+
+  .big-text {
+    font-size: 3.5rem;
+    line-height: 5rem;
+    margin: 0;
+    padding: 2rem 0 0;   
+    max-width: 34.5rem;
+  }
+
+  .small-text {
+    max-width: 26rem;
+    margin: 0 0 4rem;    
+  }
+  
+  .container-image-left,
+  .container-image-right,
+  .container-right {
+    display: flex;    
+  }
+
+  .gatherings-container,
+  .left-image,
+  .right-image{
+   width: 50%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  
+  .highlights-container-menu,
+  .right-text,
+  .left-text {
+    width: 100%;     
+  }
+
+  .container-image-right {
+    flex-direction: row-reverse;
+  }
+
+  .gatherings-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .gatherings > .left-image {
+   margin-bottom: 2rem;
+  }
+
+  .right-image {
+    margin-bottom: -3.75rem;
+  }
+
+  .left-image {
+    margin-bottom: 5rem
+  }
+
+  .right-text,
+  .left-text {
+    display: flex;
+    align-items: center;       
+  }
+
+  .left-text {
+    justify-content: left;
+  }
+  
+  .right-text {   
+    justify-content: right;    
+  }
+  
+  .highlights-container-menu {    
+    margin: 2rem 0;
+  }
+
+  h2 {
+    margin: 1.75rem 0;    
+  }
+
+  .content {
+    margin: 0;
+  }
+
+  .gatherings-content > .right-text {
+    width: auto;
+  }
+
+  ul {
+    flex-direction: column;
+    margin: 0;
+    padding-left: 1rem;
+  }
+
+  
+  .reserve-container {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+  }
+
+  .reserve-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+  }
+
+  .reservation h2 {
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 65%;    
+  }
+
+  .reservation a {
+    margin-left: 10%;   
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .logo {
+    padding: 0;
+  }
+
+  .footer-container {
+    width: 80%;      
+  }
+
+  .footer-content {
+    display: flex;
+  }
+
+  .address,
+  .opening-hours {
+   margin: 0;
+   width: 100%;
+  } 
+
+  .bg-shape:before {    
+    width: 60%;      
+  }
+
+  .left:before {
+    top: 38%;    
+  }
+  
+  .right:before {    
+    top: 55%;     
+  }
+
+  .top-left:before{    
+    width: 40%;
+  }
+
+  .bottom-right-lines:after {
+    bottom: 42%;
+    right: 6%;
+  }
+
+  .top-left-lines:after {
+    top: 7%;
+    left: 7%;
+  }
+}
+
+@media screen and (min-width: 100rem) {
+  body {
+    font-size: 1.3rem;
+  }
+  
+  .big-text {
+    font-size: 5rem;
+    max-width: 40rem;
+  }
+
+  .small-text,
+  .content,
+  .highlights h2 {
+    max-width: 35rem;
+  }
+
+  h2 {    
+    font-size: 3rem;
+    line-height: 4rem;
+    max-width: 27rem;
+  }
+
+  .fav-description {
+    font-size: 1rem;
+  }
+
+  .address p,
+  .address a,
+  .opening-hours p {
+    font-size: 1rem;
+  }
+
+  .bg-shape:before {    
+    width: 65%;
+    height: 400px;      
+  }
+
+  .left:before {
+    top: 45%;    
+  }
+  
+  .right:before {    
+    top: 55%;     
+  }
+
+  .top-left:before{    
+    width: 40%;
+  }
+
+  .bottom-right-lines:after {
+    bottom: 43%;
+    right: 7%;
+  }
+
+  .top-left-lines:after {
+    top: 5%;
+    left: 8%;
+  }
+} 
